@@ -1,50 +1,41 @@
 # DMeloper's Block Pet — Test Releases
 
+[한국어](README.ko-KR.md) · English
+
+This repository provides builds for checking installation and updates. These are test releases, not official releases.
+
 [Download test builds](https://github.com/oup030416/dmelopers-block-pet-test/releases)
 
-Windows 11 24H2 or newer, x64. Available installers are listed on the Releases page. Test releases use an EXE and a separate test-key signature.
-**Every test version, including v1.0.0, supports explicit asset replacement.**
-Compare the current SHA-256 checksums and signatures when downloading. To retry
-a replaced build at the same version, download it and reinstall manually.
+## Installation
 
-Test builds can offer a user-requested in-app update to a higher version through
-signed test metadata. Same-version in-app reinstallation and automatic rollback
-are not supported. Official builds retain manual installation.
+The versioned `dmelopers-block-pet_*_x64-setup.exe` is the WiX installer. Open Uninstall in its installation folder or use Windows Installed apps to remove it. Data deletion is unchecked by default.
 
-Display badges select the highest canonical stable version, ignoring prereleases
-and non-version tags. With no release, metadata contains `latest: null`. The
-publisher refreshes badges after deployment; there is no scheduled workflow.
-Metadata expires after 24 hours. Successful app checks are reused for six hours
-and failed attempts for ten minutes. Installation feeds appear only after a
-verified matching installer is published.
+Windows 11 24H2 or newer (x64) and Microsoft WebView2 Runtime are required. If WebView2 is missing, install it from the Microsoft page opened by the app or installer.
 
-Main contains this notice and the shared badge producer, not an application
-source mirror. Original immutable releases stay in the former repository.
-Renamed builds use the new Block Pet data identity without importing old data.
-Official and test builds of the new product share settings, presets and skins.
-Close the app before installing. Passing a test is not official release or
-antivirus approval. The [official repository](https://github.com/d-meloper/dmelopers-block-pet)
-is separate and may remain private before launch.
+Close the app normally before running the EXE. If installation is interrupted, run the same installer again to repair the program files. The installer can roll back failed MSI changes; it does not automatically restore user data.
 
----
+Ordinary test builds use a separate test signature and store their data separately from official installations. A release marked as a test of the official binary keeps that binary's official update source and shared Saved Games data; uploading it here does not change its behavior.
 
-# 테스트 릴리스
+## Updates
 
-[테스트 빌드 다운로드](https://github.com/oup030416/dmelopers-block-pet-test/releases)
+Install the current 1.0.0 installer to test the signed update to 1.0.1 from Settings. Earlier WiX-suffixed installers use different download filenames; remove those installations with data deletion unchecked, then install this build.
 
-Windows 11 24H2 이상 x64용입니다. 설치 파일은 Releases 페이지에서 확인합니다.
-테스트 설치 파일은 EXE와 테스트 전용 서명으로 구성됩니다.
-**v1.0.0부터 같은 버전의 첨부 파일을 반복 교체할 수 있습니다.** 다운로드할 때
-현재 SHA-256과 서명을 확인하세요. 같은 버전의 교체된 빌드는 직접 다운로드한 뒤
-수동으로 재설치합니다.
+Test builds can install a higher version after you request an update. Files in ordinary versioned test releases, including v1.0.0, may be replaced. To install replacement files at the same version, download them again and reinstall manually.
 
-테스트 앱은 사용자 요청으로 더 높은 버전의 서명된 업데이트를 설치할 수 있습니다.
-같은 버전의 앱 내 재설치와 자동 복구는 지원하지 않습니다. 공식 앱은 수동 설치를
-유지합니다. 배포 시 배지를 갱신하며 자동 주기 갱신은 없습니다. 릴리스가 없으면
-최신 버전 값은 null이고, 24시간이 지난 메타데이터는 다시 갱신해야 합니다.
+Official-binary candidates use separate prerelease tags and retain their exact files. They do not update the test feed or badges. Read each release's description before installing.
 
-이 저장소에는 안내와 배지 생성 코드만 둡니다. 원래 불변 릴리스는 이전 저장소에
-보존합니다. 새 이름의 앱은 기존 데이터 이전 없이 새 데이터 경로를 사용하며,
-새 공식·테스트 앱끼리는 설정·프리셋·스킨을 공유합니다. 설치 전에 앱을 종료하세요.
-테스트 결과는 공식 출시 또는 백신 검사 통과를 의미하지 않습니다.
-이 프로젝트는 비공식이며 Mojang 또는 Microsoft의 승인·제휴를 받지 않았습니다.
+## Download Warnings
+
+Compare the downloaded files with the release's current SHA-256 checksums. In PowerShell, use `Get-FileHash -Algorithm SHA256 -LiteralPath '<downloaded file>'`. A matching hash confirms matching bytes; it does not establish safety or the publisher's identity.
+
+These GitHub installers have no Authenticode signature, so Windows may show an unknown publisher. The accompanying `.sig` file is a separate update signature. If a hash differs or security software reports malware, do not run the file.
+
+Test results do not establish official release readiness or antivirus acceptance. Unperformed checks remain unverified.
+
+## About This Repository
+
+This repository contains the test guide and badge generation code. The publisher refreshes badges after deployment; there is no scheduled refresh. Older immutable releases remain in the former repository.
+
+The [official repository](https://github.com/d-meloper/dmelopers-block-pet) is separate and may remain private before launch. Official GitHub updates start at the user's request; Windows manages Store updates.
+
+Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.
