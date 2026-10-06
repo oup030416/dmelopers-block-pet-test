@@ -10,7 +10,7 @@ This repository provides builds for checking installation and updates. These are
 
 The versioned `dmelopers-block-pet_*_x64-setup.exe` is the WiX installer. Open Uninstall in its installation folder or use Windows Installed apps to remove it. Data deletion is unchecked by default.
 
-Windows 11 24H2 or newer (x64) and Microsoft WebView2 Runtime are required. If WebView2 is missing, install it from the Microsoft page opened by the app or installer.
+Minimum: x64 Windows 10 22H2 with the September 2023 cumulative update (build 19045.3448), or Windows 11 22H2 with the September 2023 cumulative update (build 22621.2283), or later. Windows 11 24H2 or newer is recommended. Microsoft WebView2 Runtime is required; setup installs it when needed using an internet connection. If that fails, install it from the Microsoft page opened by the app.
 
 Close the app normally before running the EXE. If installation is interrupted, run the same installer again to repair the program files. The installer can roll back failed MSI changes; it does not automatically restore user data.
 

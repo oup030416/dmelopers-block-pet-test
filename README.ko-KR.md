@@ -10,7 +10,7 @@
 
 `dmelopers-block-pet_*_x64-setup.exe`는 WiX 설치파일입니다. 설치 폴더의 Uninstall 또는 Windows 설치된 앱에서 제거할 수 있습니다. 데이터 삭제는 기본 해제입니다.
 
-Windows 11 24H2 이상(x64)과 Microsoft WebView2 Runtime이 필요합니다. WebView2가 없으면 앱이나 설치 프로그램에서 여는 Microsoft 페이지를 통해 먼저 설치하세요.
+최소 환경은 x64 Windows 10 22H2 + 2023년 9월 누적 업데이트(빌드 19045.3448) 또는 Windows 11 22H2 + 2023년 9월 누적 업데이트(빌드 22621.2283) 이상이며, Windows 11 24H2 이상을 권장합니다. Microsoft WebView2 Runtime이 필요합니다. 설치 프로그램이 인터넷을 통해 필요한 경우 WebView2를 설치합니다. 실패하면 앱에서 여는 Microsoft 페이지를 통해 설치하세요.
 
 앱을 정상 종료한 뒤 EXE 파일을 실행하세요. 설치가 중단되었다면 같은 설치파일을 다시 실행해 프로그램 파일을 복구하세요. 설치 실패 시 MSI 변경은 롤백할 수 있으며, 사용자 데이터의 자동 복원은 제공하지 않습니다.
 
