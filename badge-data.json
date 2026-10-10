@@ -7,20 +7,20 @@
   "downloads": 5,
   "stars": 0,
   "license": "MIT",
-  "verifiedAt": "2026-10-10T13:28:38Z",
+  "verifiedAt": "2026-10-10T14:42:35Z",
   "latest": {
     "version": "1.1.1",
     "tag": "v1.1.1",
     "platform": "windows-x86_64",
     "installer": {
       "name": "dmelopers-block-pet_1.1.1_x64-setup.exe",
-      "size": 7603874,
-      "sha256": "584b17a2616b7f6c7bd1e0ed4c30f0f78d5890e177a703ee5ac2e2313a9c645f"
+      "size": 7609134,
+      "sha256": "df857974e2fde3c38d72d14bbe38f753ad171c14cf81f3a653f14b943d1fd533"
     },
     "signature": {
       "name": "dmelopers-block-pet_1.1.1_x64-setup.exe.sig",
       "size": 432,
-      "sha256": "75fb0aa6dcf0988a1eb4f0b0b516e9720b4a1c04c1d960c81857d1a9c2cd88d8"
+      "sha256": "6fa204ca81e53efa5062eb8ea24b63b5100a8fc9aadda51c4ff0238f88c04880"
     },
     "publishedAt": "2026-10-10T12:47:09Z"
   }
