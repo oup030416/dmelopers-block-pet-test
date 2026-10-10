@@ -4,7 +4,7 @@
 
 This repository provides builds for checking installation and updates. These are test releases, not official releases.
 
-[Download test builds](https://github.com/oup030416/dmelopers-block-pet-test/releases)
+[Download the latest test build](https://github.com/oup030416/dmelopers-block-pet-test/releases/latest)
 
 ## Installation
 
@@ -14,15 +14,15 @@ Minimum: x64 Windows 10 22H2 with the September 2023 cumulative update (build 19
 
 Close the app normally before running the EXE. If installation is interrupted, run the same installer again to repair the program files. The installer can roll back failed MSI changes; it does not automatically restore user data.
 
-Ordinary test builds use a separate test signature and store their data separately from official installations. A release marked as a test of the official binary keeps that binary's official update source and shared Saved Games data; uploading it here does not change its behavior.
+Test builds use the requested app and installer version, a separate test signature and update source, and data stored separately from official installations.
 
 ## Updates
 
-Install the current 1.0.0 installer to test the signed update to 1.0.1 from Settings. Earlier WiX-suffixed installers use different download filenames; remove those installations with data deletion unchecked, then install this build.
+Install an earlier test version, then check for a newer version in Settings to test the signed update. The app and installer use the version shown in the release. Earlier WiX-suffixed installers use different download filenames; remove those installations with data deletion unchecked, then install this build.
 
 Test builds can install a higher version after you request an update. Files in ordinary versioned test releases, including v1.0.0, may be replaced. To install replacement files at the same version, download them again and reinstall manually.
 
-Official-binary candidates use separate prerelease tags and retain their exact files. They do not update the test feed or badges. Read each release's description before installing.
+Read each release's description before installing. Test releases do not change official installation identities or update sources.
 
 ## Download Warnings
 
@@ -36,6 +36,6 @@ Test results do not establish official release readiness or antivirus acceptance
 
 This repository contains the test guide and badge generation code. The publisher refreshes badges after deployment; there is no scheduled refresh. Older immutable releases remain in the former repository.
 
-The [official repository](https://github.com/d-meloper/dmelopers-block-pet) is separate and may remain private before launch. Official GitHub updates start at the user's request; Windows manages Store updates.
+The [official repository](https://github.com/d-meloper/dmelopers-block-pet) is separate. Official GitHub updates start at the user's request; Windows manages Store updates.
 
 Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.
